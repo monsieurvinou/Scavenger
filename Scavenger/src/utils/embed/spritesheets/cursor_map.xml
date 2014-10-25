@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:fdda0c022ffc62b65eb34e086d48cb2a:c3e1e0acb708fedcfadf27d76da2cab5:ce24356028ff9f4e52e367497aae73a1$ -->
+<TextureAtlas imagePath="cursor_map.png">
+    <SubTexture name="cursor_map0001" x="2" y="2" width="19" height="19"/>
+    <SubTexture name="cursor_map0002" x="23" y="2" width="1" height="1" frameX="0" frameY="0" frameWidth="19" frameHeight="19"/>
+</TextureAtlas>

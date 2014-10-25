@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="455.5" y="332">
+   <polygon points="0,0 -10.5,-101.5 57,-331 350.5,-105.5 392,-96.5 461.5,1.5 515.5,133.5 568,56.5 568,180 529.5,337.5 439,419 355.5,502.5 58,690.5 214,462 107.5,223 110.5,470.5 46,471.5 25.5,476.5 1,474 -154,387 -301.5,329 -341.5,213 -335,35 -455,179.5 -455,-332 -224.5,-120 -101.5,-45 -138.5,67 37.5,232.5 30.5,26.5"/>
+  </object>
+  <object type="core.ennemies.Turret" x="715" y="135" width="32" height="32" rotation="-319.198"/>
+  <object type="core.ennemies.Turret" x="599" y="44" width="32" height="32" rotation="-319.198"/>
+  <object type="core.objects.grabbable.Treasure" x="432" y="448" width="16" height="16"/>
+ </objectgroup>
+</map>

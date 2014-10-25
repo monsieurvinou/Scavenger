@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="369.75" y="736.75">
+   <polygon points="0,0 -36.5,58.5 54.25,42.5"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="368.333" y="735">
+   <polygon points="0,0 -98.3333,29.6667 -120,-102 -193.667,-69.6667 -327,-126 -368.333,-223 -368.333,-734.333 144.333,-734.667 413,-563.333 425.333,-521.667 511.333,-429.667 591.333,-437.667 655.333,-223.333 654.667,287.667 144.333,288 171.333,78.6667 228.333,-85.6667 194.333,-104 96,-182.333 153,-250 109.333,-254.667 16.6667,-303.333 7,-226 -64.6667,-335.667 -228.333,-261 -31.3333,-144.667 0.666667,-161 -24,-122.667"/>
+  </object>
+  <object name="boosterA" type="core.objects.Collectible" x="239" y="464" width="32" height="32"/>
+  <object type="core.ennemies.Turret" x="504.983" y="863.699" width="32" height="32" rotation="-82.4816"/>
+  <object type="core.ennemies.Turret" x="499.921" y="906.618" width="32" height="32" rotation="-82.2308"/>
+  <object type="core.decors.Door" x="368" y="768" width="224" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

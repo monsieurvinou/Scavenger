@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="277.5" y="753">
+   <polygon points="0,0 -275,266.5 -167.5,19.5 -277.5,-240.5 -277,-542 -273,-491 -264,-556 -228.5,-542.5 -143,-524 -76.5,-534.5 -7,-550.5 79.5,-541 202,-543 416.5,-591.5 468.5,-484 745.5,-240 745,269 409,59.5 236,269 219.5,80 301.5,-108 209.5,-51 254,-99.5 176,-123.5 131,-163.5 143,-262.5 315,-280.5 366.5,-194 469.5,-183.5 551.5,-190.5 428.5,-268.5 363.5,-331 301,-357.5 221,-351 184.5,-399.5 111,-412 43,-245.5 16.5,-83 134.5,-86 116,-44 157.5,-2.5"/>
+  </object>
+  <object type="core.ennemies.Turret" x="290" y="742" width="32" height="32" rotation="-179.334"/>
+  <object type="core.ennemies.Turret" x="365" y="742" width="32" height="32" rotation="-181.563"/>
+  <object type="core.decors.Door" x="288" y="560" width="160" height="16">
+   <properties>
+    <property name="color" value="red"/>
+   </properties>
+  </object>
+  <object type="core.objects.grabbable.Treasure" x="736" y="544" width="16" height="16"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="1022" y="1023">
+   <polygon points="0,0 -96.6667,-165 -22.6667,-220.333 -18,-187 0.666667,-200.333 1.33333,-1021.67 -348.667,-829.667 -489.333,-852.333 -564.667,-818.333 -552,-757 -339.333,-631.667 -277.333,-651.667 -89.3333,-551.667 -180,-429.667 -182,-337.667 -119.333,-317.667 -156.667,-213 -176.667,-213.667 -296,-165 -371.333,-192.333 -560,-265.667 -713.333,-228.333 -862,-400.333 -851.333,-511.667 -836,-583 -932,-552.333 -896,-639 -921.333,-757.667 -906,-775.667 -787.333,-735.667 -800,-682.333 -766.667,-626.333 -767.333,-479 -689.333,-413 -602,-353 -474,-377.667 -302,-240.333 -299.333,-445 -383.333,-516.333 -513.333,-527.667 -551.333,-550.333 -630.667,-559 -702.667,-780.333 -512,-1021.67 -846,-803.667 -925.333,-827.667 -1022,-511.667 -974.667,-292.333 -1022,0.333333 -856.667,-191 -510.667,0.333333"/>
+  </object>
+  <object name="shipwreck_yellow" type="core.objects.grabbable.Shipwreck" x="147" y="296" width="32" height="32" rotation="-2.80832"/>
+  <object type="core.ennemies.Turret" x="552" y="151" width="32" height="32"/>
+  <object type="core.ennemies.Turret" x="602" y="159" width="32" height="32"/>
+  <object type="core.ennemies.Turret" x="655" y="166" width="32" height="32"/>
+  <object type="core.decors.Door" x="320" y="208" width="160" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

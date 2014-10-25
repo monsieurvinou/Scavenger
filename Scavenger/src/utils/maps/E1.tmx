@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="780" y="476">
+   <polygon points="0,0 -22,47 -177,-2 -212,49 -432,151 -383,175 -235,169 -147,289 -605,293 -713,309 -779,38 -649,-128 -579,-122 -493,-77 -436,-121 -292,-121 -313,-177 -243,-152 -105,-61 -60,-197 30,-101 123,-162 243,35 243,546 57,285 24,89"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="262" y="770">
+   <polygon points="0,0 154,2 328,-4"/>
+  </object>
+  <object name="shipwreck_red" type="core.objects.grabbable.Shipwreck" x="416" y="617" width="32" height="32" rotation="-2.80832"/>
+  <object type="core.ennemies.Turret" x="496" y="768" width="32" height="32" rotation="-178.978"/>
+  <object type="core.ennemies.Turret" x="864" y="816" width="32" height="32" rotation="-123.492"/>
+ </objectgroup>
+</map>

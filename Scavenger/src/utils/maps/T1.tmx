@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="446" y="313">
+   <polygon points="0,0 -89,-101.5 -175,-110 -244.667,-93.6667 -310.333,-83.6667 -445,199.333 -337,459.667 -125.667,195.667 -57.6667,28.3333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="436.667" y="751.333">
+   <polygon points="0,0 -326.333,20 75,272.333 249.333,61.3333 279.667,30 434.667,-57 586,-239.333 322.333,-340.333 258.667,-587.667 249.333,-380.333 158,-279 49,-94.3333 37.3333,-54"/>
+  </object>
+  <object type="core.objects.grabbable.Treasure" x="256" y="704" width="16" height="16"/>
+ </objectgroup>
+</map>

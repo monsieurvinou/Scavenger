@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="0" y="0" width="1021" height="71"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="960" y="48" width="64" height="736"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="0" y="64" width="80" height="711"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="64" y="720" width="687" height="56"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="65" y="458" width="337" height="56"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="332" y="504" width="70" height="112"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="75" y="146" width="916" height="55"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="813" y="42" width="147" height="114"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="722" y="52" width="31" height="101">
+   <properties>
+    <property name="group" value=""/>
+   </properties>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="624" y="64" width="32" height="96">
+   <properties>
+    <property name="group" value="30"/>
+   </properties>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="509" y="65" width="32" height="86">
+   <properties>
+    <property name="group" value="30"/>
+   </properties>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="427" y="68" width="31" height="83"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="343" y="70" width="22" height="83"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="240" y="64" width="32" height="96"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="144" y="64" width="27" height="92"/>
+  <object name="Zone base" type="core.decors.ZoneBase" x="80" y="512" width="253" height="212"/>
+ </objectgroup>
+</map>

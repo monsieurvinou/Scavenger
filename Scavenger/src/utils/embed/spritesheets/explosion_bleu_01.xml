@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="explosion_bleu_01.png">
+    <SubTexture name="explo_bleu0001" x="2" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0002" x="26" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0003" x="50" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0004" x="74" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0005" x="98" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0006" x="122" y="2" width="22" height="21"/>
+    <SubTexture name="explo_bleu0007" x="146" y="2" width="16" height="20" frameX="-1" frameY="0" frameWidth="22" frameHeight="21"/>
+</TextureAtlas>

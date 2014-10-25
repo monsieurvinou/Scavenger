@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="61" y="733">
+   <polygon points="0,0 136,-34 86,53"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="198" y="233">
+   <polygon points="0,0 313,-233 531,-14 625,-9 691,27 770,51 825,279 791,506 712,588 667,587 573,598 315,788 91,603 57,468 79,459 49,353 79,257 18,192 109,107 123,27 228,48 337,116 298,118 236,216 311,388 333,475 470,504 571,372 515,329 574,222 685,256 679,107 637,74 516,121 494,262 440,359 377,320 382,184 451,86 393,-62"/>
+  </object>
+  <object name="hook" type="core.objects.Collectible" x="800" y="352" width="32" height="32"/>
+ </objectgroup>
+</map>

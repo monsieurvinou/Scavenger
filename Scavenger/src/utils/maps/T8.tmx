@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="496.5" y="148">
+   <polygon points="0,0 17,-147.5 524.5,-147.5 260.5,126 525.5,365 527,875 -496,875.5 -496,363.5 -358,278.5 -419.5,137 -496.5,-147 -299,60 -210.5,85.5 -47.5,72 -3.5,119 -7,255 26,357.5 100,432 76,453.5 37,492 -103,565.5 -79,455 9,365 -129,394.5 -329.5,368 -258.5,495.5 -342.5,475 -174,604 -72,618 163,563 330,492.5 295.5,463 273.5,318 91.5,174.5 126.5,95"/>
+  </object>
+  <object type="core.decors.Door" x="464" y="320" width="160" height="16">
+   <properties>
+    <property name="color" value="yellow"/>
+   </properties>
+  </object>
+  <object type="core.decors.Door" x="464" y="352" width="192" height="16">
+   <properties>
+    <property name="color" value="cyan"/>
+   </properties>
+  </object>
+  <object type="core.decors.Door" x="464" y="288" width="160" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+  </object>
+  <object type="core.decors.Door" x="464" y="256" width="160" height="16">
+   <properties>
+    <property name="color" value="red"/>
+   </properties>
+  </object>
+  <object type="core.objects.grabbable.Treasure" x="272" y="560" width="16" height="16"/>
+ </objectgroup>
+</map>
