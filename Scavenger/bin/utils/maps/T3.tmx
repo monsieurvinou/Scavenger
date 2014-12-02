@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16">
+ <objectgroup name="Terrain">
+  <properties>
+   <property name="group" value="30"/>
+  </properties>
+  <object type="citrus.objects.platformer.nape.Platform" x="45" y="178">
+   <polygon points="0,0 251,71.5 159,152 90.5,97.5"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="850" y="777.333">
+   <polygon points="0,0 172,244.667 173,-261.333"/>
+  </object>
+  <object type="core.ennemies.Turret" x="224" y="671" width="32" height="32" rotation="-149.88"/>
+  <object type="core.ennemies.Turret" x="143.388" y="635.508" width="32" height="32" rotation="-144.591"/>
+  <object name="grosse pute" type="core.decors.Door" x="368" y="560" width="160" height="16">
+   <properties>
+    <property name="color" value="red"/>
+   </properties>
+  </object>
+  <object type="core.objects.grabbable.Treasure" x="560" y="256" width="16" height="16"/>
+  <object type="citrus.objects.platformer.nape.Platform" x="350.333" y="733.333">
+   <polygon points="0,0 -28.3333,-106 -210.667,-237.333 -123,-68.6667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="155.333" y="642">
+   <polygon points="0,0 -16,-146.333 73,22.3333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="138.667" y="495.333">
+   <polygon points="0,0 34.6667,-116.333 244,-62.3333 292.333,54.6667 183.667,132.333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="384" y="433.667">
+   <polygon points="0,0 35,-35.6667 70.3333,87 46,116.333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="512" y="0">
+   <polygon points="0,0 511,0 509.333,361.333 162.667,272"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="382.667" y="432.667">
+   <polygon points="0,0 -87.3333,-184 130,-432.667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="382.667" y="431.333">
+   <polygon points="0,0 36,-34 108.667,-152.667 130,-428.667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="512.667" y="2">
+   <polygon points="0,0 -22,275.333 133.333,216"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="1023.67" y="509.333">
+   <polygon points="0,0 -57.6667,-162.333 0,-328.333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="969.667" y="356.667">
+   <polygon points="0,0 -136.667,150 -136.333,-48"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="833.333" y="371">
+   <polygon points="0,0 -0.333333,-59.3333 -191.667,-150.333 -263.333,-82.6667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="570.333" y="288.667">
+   <polygon points="0,0 -9.66667,8 -19,135.667 54,186 105.333,31.3333"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="551.333" y="425">
+   <polygon points="0,0 72,49.3333 155,122.333 -101.333,317 -84,197.667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="621.333" y="473.333">
+   <polygon points="0,0 147.333,-24 82,76.6667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="831.333" y="510">
+   <polygon points="0,0 -126.667,40.6667 -384,235.333 -338,422.667 -202.667,270.667"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="831.333" y="510.667">
+   <polygon points="0,0 8.66667,131.333 -51.3333,206 -204.667,274"/>
+  </object>
+  <object type="citrus.objects.platformer.nape.Platform" x="628" y="783.333">
+   <polygon points="0,0 -136.667,150 -115.333,240"/>
+  </object>
+ </objectgroup>
+</map>
