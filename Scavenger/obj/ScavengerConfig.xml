@@ -9,15 +9,15 @@
   <compiler>
     <define append="true">
       <name>CONFIG::debug</name>
-      <value>false</value>
-    </define>
-    <define append="true">
-      <name>CONFIG::release</name>
       <value>true</value>
     </define>
     <define append="true">
+      <name>CONFIG::release</name>
+      <value>false</value>
+    </define>
+    <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'01/12/2014'</value>
+      <value>'02/12/2014'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -31,20 +31,18 @@
       <name>CONFIG::desktop</name>
       <value>true</value>
     </define>
-    <optimize>true</optimize>
-    <omit-trace-statements>true</omit-trace-statements>
-    <verbose-stacktraces>false</verbose-stacktraces>
+    <verbose-stacktraces>true</verbose-stacktraces>
     <source-path append="true">
-      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\src</path-element>
+      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\Scavenger\src</path-element>
       <path-element>D:\05_PROGRAMS\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
-      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\lib\CEV3-1-10-Starling-Feathers-Nape.swc</path-element>
-      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\lib\greensock.swc</path-element>
+      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\Scavenger\lib\CEV3-1-10-Starling-Feathers-Nape.swc</path-element>
+      <path-element>D:\01_AS3\01_PROJECTS\Scavenger\Scavenger\lib\greensock.swc</path-element>
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>D:\01_AS3\01_PROJECTS\Scavenger\src\Gravity.as</path-element>
+    <path-element>D:\01_AS3\01_PROJECTS\Scavenger\Scavenger\src\Gravity.as</path-element>
   </file-specs>
   <default-background-color>#000000</default-background-color>
   <default-frame-rate>30</default-frame-rate>

@@ -1,5 +1,6 @@
 package
 {
+	import flash.display.Stage3D;
 	import flash.filesystem.File;
 	import flash.geom.Rectangle;
 	
@@ -44,9 +45,9 @@ package
 			setUpStarling(false, 4);
 		}
 		
-		override public function setUpStarling(debugMode:Boolean=false, antiAliasing:uint=1,   viewPort:flash.geom.Rectangle=null, profile:String="baseline"):void
+		override public function setUpStarling(debugMode:Boolean=false, antiAliasing:uint=1,   viewPort:flash.geom.Rectangle=null, stage3D:Stage3D=null):void
 		{
-			super.setUpStarling(debugMode, antiAliasing, viewPort, profile);
+			super.setUpStarling(debugMode, antiAliasing, viewPort, stage3D);
 			setUpFilters();
 			this.starling.addEventListener("context3DCreate", function(e:*):void {
 				loadLevel(LoadingScreen);
@@ -55,7 +56,7 @@ package
 		
 		private function loadLevel(level:Class, isRestart:Boolean=false):void {
 			// Set to TRUE to have the commands like "goto" & others ( for testing only )
-			console.enabled = false;
+			console.enabled = true;
 			if ( console.enabled ) {
 				addConsoleCommands();
 			}
