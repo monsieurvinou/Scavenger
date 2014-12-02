@@ -1,6 +1,8 @@
 package levels
 {
+	import citrus.sounds.CitrusSound;
 	import com.greensock.TweenLite;
+	import flash.media.Sound;
 	
 	import citrus.core.starling.StarlingState;
 	import citrus.objects.CitrusSprite;
@@ -56,10 +58,11 @@ package levels
 		private function loadAssets():void
 		{
 			// We load the assets
+			Gravity.assets.verbose = true;
 			Gravity.assets.loadQueue(function(ratio:Number):void
 			{
 				if ( _loadingBar != null ) _loadingBar.removeFromParent();
-				_loadingBar = new Quad(800*ratio, 24, 0xD7D7D7);
+				_loadingBar = new Quad(800*ratio + 1, 24, 0xD7D7D7);
 				
 				_loadingBar.x = _loadingBarBg.x;
 				_loadingBar.y = _loadingBarBg.y;
@@ -89,6 +92,10 @@ package levels
 			for each ( var sfxSound:String in sfxSounds ) {
 				var loop:int = 0;
 				if ( sfxSound == "healing" || sfxSound == "player_forward") loop = -1;
+				
+				var cSound:Sound = Gravity.assets.getSound(sfxSound);
+				trace("Sound : " + sfxSound);
+				trace("File : " + cSound);
 				
 				_ce.sound.addSound(sfxSound, {
 					sound: Gravity.assets.getSound(sfxSound),

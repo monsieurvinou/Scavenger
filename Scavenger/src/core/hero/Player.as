@@ -1,6 +1,7 @@
 package core.hero
 {
 	import com.greensock.TweenLite;
+	import utils.MessageContent;
 	
 	import citrus.objects.CitrusSprite;
 	import citrus.objects.NapePhysicsObject;
@@ -116,18 +117,9 @@ package core.hero
 		{
 			boosterState += 1;
 			if ( boosterState == 1 ) {
-				MessageBox.instance.affiche("Pilot.\n" +
-					"You found an old Nitrogen Accelerator Module. This is perfect!\n" +
-					"The N.A.M. is activated by the switch on the control panel with the 'CTRL' on it.\n" +
-					"It used to stand for something, but I don't have any information on that. All you have to do is keep this switch " +
-					"on and you should be able to go much faster.\n" +
-					"Although it is a nice finding, don't forget that your mission is to bring back the artifacts. Not collect junk.\n\n" +
-					"Over & out.");
+				MessageBox.instance.affiche(MessageContent.getMessage("booster_1"));
 			} else if ( boosterState == 2 ) {
-				MessageBox.instance.affiche("Pilot.\n" +
-					"You found another N.A.M. I see. You know that no one is gonna try to race you out there, you're alone.\n" +
-					"Go onward with the mission. Please.\n\n" +
-					"Over & out.");
+				MessageBox.instance.affiche(MessageContent.getMessage("booster_2"));
 			}
 			if ( boosterState > 2 ) boosterState = 2;
 		}
@@ -233,12 +225,7 @@ package core.hero
 			
 			if ( _health <= 50 && !MessageBox.healthMessage ) {
 				MessageBox.healthMessage = true;
-				MessageBox.instance.affiche("Pilot.\n" +
-					"I'm reading that you damaged your ship quick a good amount. First of, can you try not to do it?\n" +
-					"Second, don't forget that we have a repair module back at the base at the coordinates (12,1).\n" +
-					"The nano-bots can take care of your ship if you feel like there's anything wrong. We can't afford to lose you because you just" +
-					" didn't repair your ship.\n\n" +
-					"Over & out.");
+				MessageBox.instance.affiche(MessageContent.getMessage("damage_ship"));
 			}
 			
 			// Screen Shake

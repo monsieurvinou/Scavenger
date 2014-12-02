@@ -53,7 +53,7 @@ package core.objects.hook
 		{
 			super.handleBeginContact(interactionCallback);
 			var collider:NapePhysicsObject = NapeUtils.CollisionGetOther(this, interactionCallback);
-			if ( collider is Grabbable ) {
+			if ( collider is Grabbable && collider.body != null ) {
 				retractSignal.dispatch(collider);
 			} else if ( !(collider is ZoneBase) ) {
 				listContact.push(collider);

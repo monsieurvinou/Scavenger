@@ -20,8 +20,11 @@ package utils
 		
 		public function Background(name:String, params:Object=null)
 		{
+			if ( params != null && params.tiles != null ) {
+				_tiles = Texture.fromBitmap(new (params.tiles as Class)(),true,false,1,'bgra',true);
+				params.tiles = null;
+			}
 			super(name, params);
-			_tiles.repeat = true;
 			var heightImage:Number = (_heightScene/_tiles.height) + 4;
 			var widthImage:Number = (_widthScene/_tiles.width) + 4;
 
@@ -46,18 +49,15 @@ package utils
 				if((x + width/2) < camera.camPos.x) x += _tiles.width;
 				else x -= _tiles.width;
 			}
-			if ( camera.camPos.y - (y + height/2) <= -tiles.height || camera.camPos.y - (y + height/2) >= _tiles.height ) {
+			if ( camera.camPos.y - (y + height/2) <= -_tiles.height || camera.camPos.y - (y + height/2) >= _tiles.height ) {
 				if ( (y + height/2) < camera.camPos.y ) y += _tiles.height;
 				else y -= _tiles.height;
-			}
-			
+			}			
 		}
 		
-		public function get tiles():Texture { return _tiles; }
 		public function get widthScene():Number { return _widthScene; }
 		public function get heightScene():Number { return _heightScene; }
 		
-		public function set tiles(value:Texture):void { _tiles = value; }
 		public function set widthScene(value:Number):void { _widthScene = value; }
 		public function set heightScene(value:Number):void { _heightScene = value; }
 		

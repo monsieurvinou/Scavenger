@@ -22,7 +22,6 @@ package core.objects.hook
 		{
 			super("hook_string");
 			_textureLine = Gravity.assets.getTexture("hook_string");
-			_textureLine.repeat = true;
 			_imageView = new Image(_textureLine);
 			handleSizeChange(line);
 			view = _imageView;

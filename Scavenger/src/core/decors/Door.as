@@ -2,6 +2,7 @@ package core.decors
 {
 	import citrus.objects.platformer.nape.Platform;
 	import citrus.physics.PhysicsCollisionCategories;
+	import utils.MessageContent;
 	
 	import core.hero.Player;
 	
@@ -65,18 +66,9 @@ package core.decors
 						if ( Player.instance.body.contains( ray.at(rayResult.distance) ) ) {
 							MessageBox.doorMessage = true;
 							if ( !Player.hookUnlocked ) {
-								MessageBox.instance.affiche("Pilot.\n" +
-									"Do you see this thing? It kind of look like a door. I think it is linked to something our radars located.\n" +
-									"It looks like a shipwreck with something being able to destroy those doors. The only one we located " +
-									"is around the coordinates (9,5).\n\n" +
-									"By the way, you should go around the (16,10) to get something to tow the shipwreck back to the station.\n\n" +
-									"Over & out.");
+								MessageBox.instance.affiche(MessageContent.getMessage("see_door_not_hook"));
 							} else {
-								MessageBox.instance.affiche("Pilot.\n" +
-									"Do you see this thing? It kind of look like a door. I think it is linked to something our radars located.\n" +
-									"It looks like a shipwreck with something being able to destroy those doors. The only one we located " +
-									"is around the coordinates (9,5).\n\n" +
-									"Over & out.");
+								MessageBox.instance.affiche(MessageContent.getMessage("see_door_hook_unlock"));
 							}
 						}
 					}
@@ -89,29 +81,16 @@ package core.decors
 			switch(colorParameter)
 			{
 				case "red":
-					MessageBox.instance.affiche("Pilot.\n" +
-						"We have successfully desactivated the red doors. You should be able to explore more of this sector.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("unlock_door_red"));
 				break;
 				case "blue":
-					MessageBox.instance.affiche("Pilot.\n" +
-						"We have successfully desactivated the blue doors.\n" +
-						"We also retrieved some old music from this shipwreck, but I don't think you can use it in any way.\n" +
-						"You can continue your mission.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("unlock_door_blue"));
 				break;
 				case "yellow":
-					MessageBox.instance.affiche("Pilot.\n" +
-						"Yellow doors destroyed! It is starting to feel like a cheap way to make your mission longer.\n" +
-						"Sorry for the inconvinience.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("unlock_door_yellow"));
 				break;
 				case "cyan":
-					MessageBox.instance.affiche("Pilot.\n" +
-						"Cyan doors destroyed. We think it was the last ones. Well, we just didn't located any other shipwreck in the area.\n" +
-						"I don't think I'll be communicating with you anymore, unless you find something interesting.\n" +
-						"Keep up the good work.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("unlock_door_cyan"));
 				break;
 			}
 			for ( var i:int = 0; i<listDoors.length; i++ ) {

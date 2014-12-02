@@ -3,6 +3,7 @@ package levels
 	import starling.display.Image;
 	import starling.display.Quad;
 	import starling.display.Sprite;
+	import utils.MessageContent;
 	
 	import utils.MessageBox;
 	
@@ -51,11 +52,7 @@ package levels
 				if ( MessageBox.mapMessage <= 3 ) {
 					if (MessageBox.mapMessage == 3 ) {
 						MessageBox.mapMessage += 1;
-						MessageBox.instance.affiche("Pilot.\n" +
-							"I forgot to tell you, I don't know if you already saw it, but there's a button on your control panel labeled 'M'.\n" +
-							"If you press it, it can display a map of the sector of the universe you're in. It might be helpful to avoid " +
-							"getting lost.\n\n" +
-							"Over & out.");
+						MessageBox.instance.affiche(MessageContent.getMessage("map"));
 					} else if ( MessageBox.mapMessage < 3 ) {
 						MessageBox.mapMessage += 0.5;
 					}

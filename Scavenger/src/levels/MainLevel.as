@@ -2,6 +2,7 @@ package levels
 {
 	import com.greensock.TweenLite;
 	import com.greensock.easing.Cubic;
+	import utils.MessageContent;
 	
 	import flash.geom.Point;
 	
@@ -183,13 +184,7 @@ package levels
 					triggerBoss("animation");
 					MessageBox.instance.messageEnding.remove(startBossAnimation);
 				});
-				MessageBox.instance.affiche("Pilot.\n" +
-					"Everyone here is congratuling you. You did a really good job gathering all those artifacts.\n\n" +
-					"We will try to suck the power out of them and then teleport you back to our mothership.\n\n" +
-					"Nothing to worry about.\n\n" +
-					"Nothing's going to happen.\n" +
-					"But stay on guard. You know... just in case.\n\n" +
-					"Over & out.");
+				MessageBox.instance.affiche(MessageContent.getMessage("end"));
 			} else if ( state == "animation") {
 				_ce.sound.getSound(songPlaying).removeEventListeners();
 				TweenLite.to( _ce.sound.getSound(songPlaying), 6, {volume: 0, onComplete: function ():void {
@@ -281,7 +276,7 @@ package levels
 			
 			// On ajoute le background
 			bg = new Background("Background", {
-				tiles: Gravity.assets.getTexture("star_1"), 
+				tiles: Assets.StarBackground, 
 				widthScene: 800,
 				heightScene: 640
 			});

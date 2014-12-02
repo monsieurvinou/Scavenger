@@ -1,6 +1,7 @@
 package core.objects.grabbable
 {
 	import com.greensock.TweenLite;
+	import utils.MessageContent;
 	
 	import citrus.objects.CitrusSprite;
 	
@@ -143,11 +144,7 @@ package core.objects.grabbable
 			super.desactivatePhysic();
 			if ( !MessageBox.artifactMessage ) {
 				MessageBox.artifactMessage = true;
-				MessageBox.instance.affiche("Pilot.\n" +
-					"You finally found one of the artifact. Good job!\n" +
-					"Bring it back to the station and put it in the repair area. We will transport it in a container.\n" +
-					"Scavenge the other ones as fast as possible. There should be around 7 other artifacts in this sector.\n\n" +
-					"Over & out.");
+				MessageBox.instance.affiche(MessageContent.getMessage("treasure_hooked"));
 			}
 		}
 		

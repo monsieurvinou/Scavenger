@@ -3,6 +3,7 @@ package core.objects
 	import citrus.objects.NapePhysicsObject;
 	import citrus.objects.platformer.nape.Sensor;
 	import citrus.physics.nape.NapeUtils;
+	import utils.MessageContent;
 	
 	import core.hero.Player;
 	import core.objects.hook.Hook;
@@ -39,13 +40,7 @@ package core.objects
 							Player.hookUnlocked = true;
 							Player.instance.hook = new Hook(Player.instance);
 							Player.instance.hook.addHook(_ce.state as MainLevel);
-							MessageBox.instance.affiche("Pilot.\n" +
-								"I just saw that you got your hands on an hold tow hook. Well done.\n\n" +
-								"You can connect it to the missile launcher panel, I don't think you'll see any missile that can be loaded in " +
-								"this old ship.\n" +
-								"Once this is done, you'll be able to press the big 'X' button on the control panel.\n" +
-								"Now go get the artifacts. The only one we precisely located was around the coordinates (15,4).\n\n" +
-								"Over & out.");
+							MessageBox.instance.affiche(MessageContent.getMessage("unlock_hook"));
 						}
 						this.kill = true;
 						break;

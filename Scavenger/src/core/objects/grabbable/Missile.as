@@ -4,6 +4,7 @@ package core.objects.grabbable
 	import citrus.physics.PhysicsCollisionCategories;
 	import citrus.physics.nape.NapeUtils;
 	import citrus.view.starlingview.AnimationSequence;
+	import starling.animation.IAnimatable;
 	
 	import core.ennemies.MVEnnemy;
 	import core.hero.Player;
@@ -29,7 +30,7 @@ package core.objects.grabbable
 		protected var _speed:Number;
 		protected var _angle:Number;
 		protected var _isFired:Boolean = false;
-		protected var _juggler:DelayedCall;
+		protected var _juggler:IAnimatable;
 		
 		public function Missile(pos:Vec2, damage:Number = 0, lifespan:Number = 5, speed:Number = 0, angle:Number = 0)
 		{
@@ -136,12 +137,14 @@ package core.objects.grabbable
 		
 		override public function desactivatePhysic():void
 		{
-			_body.setShapeFilters(
-				new InteractionFilter(
-					PhysicsCollisionCategories.Get("Bullets"), 
-					PhysicsCollisionCategories.GetNone()
-				) 
-			);
+			if ( _body != null ) {
+				_body.setShapeFilters(
+					new InteractionFilter(
+						PhysicsCollisionCategories.Get("Bullets"), 
+						PhysicsCollisionCategories.GetNone()
+					) 
+				);
+			}
 		}
 		
 		public function set damage(value:Number):void { _damage = value; }

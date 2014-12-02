@@ -2,6 +2,7 @@ package levels
 {
 	import com.greensock.TweenLite;
 	import com.greensock.easing.Cubic;
+	import utils.MessageContent;
 	
 	import flash.filesystem.File;
 	import flash.geom.Point;
@@ -52,7 +53,7 @@ package levels
 			// On crée l'espace physique
 			nape = new Nape("nape");
 			nape.gravity = new Vec2(0,0);
-			nape.visible = false;
+			nape.visible = true;
 			
 			// Réglage de la caméra
 			camOffset = new Point(0.5, 0.5);
@@ -153,16 +154,7 @@ package levels
 							player.controlsEnabled = true;
 							view.camera.manualPosition = null;
 							view.camera.target = player;
-							MessageBox.instance.affiche("Welcome.\nYou've been sent here to gather some strange artifacts that have been " +
-								"detected in this region of the universe. This is the only ship we had for you, so you'll have to get use " +
-								"to this antiquity.\n" +
-								"As this is an old model, maybe you don't remember how to use this. You should have some Arrows in the bottom " +
-								"corner of the control panel. Use the left and right to rotate your ship and the two others to propel it" +
-								" forward or backward.\n" +
-								"You'll get use to it.\n" +
-								"You should be searching for something to tow the junk you'll find in space. There should be one around " +
-								"the coordinates (16,10). Good luck pilot.\n\n" +
-								"Over & out.");
+							MessageBox.instance.affiche(MessageContent.getMessage("welcome"));
 						}
 					});
 				}

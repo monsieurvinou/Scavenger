@@ -70,7 +70,7 @@ package levels
 			}
 		}
 		
-		private function startGame(keyCode:int,keyLocation:int):void 
+		private function startGame(keyCode:int,keyLocation:int, machin:Object):void 
 		{
 			TweenLite.to(_ce.sound.getSound("title"), 4, {volume: 0, onComplete: function():void {
 				_ce.sound.stopSound("title");

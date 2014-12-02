@@ -1,6 +1,7 @@
 package levels
 {
 	import com.greensock.TweenLite;
+	import utils.assets.Assets;
 	
 	import flash.geom.Point;
 	
@@ -62,7 +63,7 @@ package levels
 			view.camera.setUp(player, null, new Point(0.2, 0.5));
 			
 			_bg = new Background("Background", {
-				tiles: Gravity.assets.getTexture("star_1"), 
+				tiles: Assets.StarBackground, 
 				widthScene: 800,
 				heightScene: 640
 			});

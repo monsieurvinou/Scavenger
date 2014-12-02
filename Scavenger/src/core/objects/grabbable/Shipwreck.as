@@ -1,6 +1,7 @@
 package core.objects.grabbable
 {
 	import com.greensock.TweenLite;
+	import utils.MessageContent;
 	
 	import citrus.objects.CitrusSprite;
 	
@@ -55,19 +56,10 @@ package core.objects.grabbable
 			if ( !MessageBox.shipwreckMessage ) {
 				MessageBox.shipwreckMessage = true;
 				if ( MessageBox.doorMessage ) {
-					MessageBox.instance.affiche("Pilot.\n" +
-						"I see you've got your hand on a shipwreck. Bring it back to the station and put it in the repair area.\n" +
-						"We should be able to recycle it and desactivate those doors I talked to you about.\n\n" +
-						"Don't ask how we can do it, we just can.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("shipwreck_after_door"));
 				} else {
 					MessageBox.doorMessage = true;
-					MessageBox.instance.affiche("Pilot.\n" +
-						"I see you've got your hand on a shipwreck. Bring it back to the station and put it in the repair area.\n" +
-						"We should be able to recycle it. I don't think you saw it yet, but some part of this universe are blocked by some " +
-						"sort of doors. I think that with that shipwreck we can desactivate those doors. At least the red ones.\n\n" +
-						"Don't ask how we can do it, we just can.\n\n" +
-						"Over & out.");
+					MessageBox.instance.affiche(MessageContent.getMessage("shipwreck_before_door"));
 				}
 			}
 		}

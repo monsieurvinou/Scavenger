@@ -19,6 +19,11 @@ package utils.assets
 		
 		[Embed(source="../embed/loadingscreen/loading_screen.jpg")]
 		public static var LoadingScreen:Class;
+		
+		[Embed(source="../embed/star_1.png")]
+		public static var StarBackground:Class;
+		
+		
 	}
 
 }

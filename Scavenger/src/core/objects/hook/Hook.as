@@ -59,14 +59,18 @@ package core.objects.hook
 				_ce.sound.playSound("fire_hook");
 				Hook.isFiring = true;
 			} else if ( _claw.canFire() && _grabbed != null ) {
-				// we fire the item
-				_grabbed.body.velocity = new Vec2();
-				var eject:Vec2 = new Vec2(0, -70);
-				eject.rotate( deg2rad(_grabbed.rotation) );
-				_grabbed.activatePhysic();
-				_grabbed.body.applyImpulse(eject)
-				if ( _grabbed is Missile ) (_grabbed as Missile).launch();
-				_grabbed = null;
+				if ( _grabbed.body != null && _grabbed.body.velocity != null ) {
+					// we fire the item
+					_grabbed.body.velocity = new Vec2();
+					var eject:Vec2 = new Vec2(0, -70);
+					eject.rotate( deg2rad(_grabbed.rotation) );
+					_grabbed.activatePhysic();
+					_grabbed.body.applyImpulse(eject)
+					if ( _grabbed is Missile ) (_grabbed as Missile).launch();
+					_grabbed = null;
+				} else {
+					_grabbed = null;
+				}
 			}
 		}
 		
