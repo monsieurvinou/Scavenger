@@ -53,7 +53,7 @@ package levels
 			// On crée l'espace physique
 			nape = new Nape("nape");
 			nape.gravity = new Vec2(0,0);
-			nape.visible = true;
+			nape.visible = false;
 			
 			// Réglage de la caméra
 			camOffset = new Point(0.5, 0.5);

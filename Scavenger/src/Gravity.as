@@ -56,7 +56,7 @@ package
 		
 		private function loadLevel(level:Class, isRestart:Boolean=false):void {
 			// Set to TRUE to have the commands like "goto" & others ( for testing only )
-			console.enabled = true;
+			console.enabled = false;
 			if ( console.enabled ) {
 				addConsoleCommands();
 			}
